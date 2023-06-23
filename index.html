@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body class="login-body">
+    
+<div class="login-parent" id="login-parent">
+    <h1>Wecolme To Quiz App</h1>
+    <div class="email-password-parent">
+        <h1>Singup</h1>
+    <div class="login-child-input"><p>Email</p>
+        <input id="login-email" type="email" placeholder="email...">
+    </div>
+    <div class="login-child-input"><p>Password</p>
+        <input id="login-password" type="password" placeholder="password... " minlength="8" maxlength="8">
+    </div>
+    <button class="login-btn" id="login-btn" onclick="loginDataSave()">Singup</button>
+</div>
+</div>
+<!-- sing up -->
+<div style="display: none;" class="login-parent" id="singup-parent">
+    <h1>Wecolme Quiz App</h1>
+    <div class="email-password-parent">
+        <h1>Login</h1>
+    <div class="login-child-input"><p>Email</p>
+        <input id="singup-email" type="email" placeholder="email...">
+    </div>
+    <div class="login-child-input"><p>Password</p>
+        <input id="singup-password" type="password" placeholder="password... " maxlength="8">
+    </div>
+    <button class="login-btn" id="login-btn" onclick="singupDataSave()">Login</button>
+</div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+} 
+.login-body{
+    width: 100%;
+    height : auto ; 
+    background-image: linear-gradient(90deg, #3e32a8,#ff0033); 
+    color: #fff; 
+}
+#result-box{
+    height: 300px;
+    width: 100%;
+    border: solid;
+    display: none;
+}
+#result-box-child{
+    height: 300px;
+    width: 30%;
+    border: solid;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* login page session start  */
+/* #singup-parent{
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30;
+
+} */
+.login-parent{
+    /* border: solid; */
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    margin-top: 30px;
+}
+.email-password-parent{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin-top: 25px;
+    width: 350px;
+    background-color: black;
+    /* border: solid; */
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.login-child-input{
+
+    width: 70%;
+    margin-top: 30px;
+    /* border: solid; */
+}
+.login-child-input input{
+    width: 100%;
+    height:40px ;
+    /* border: none; */
+    border-bottom: solid 1px;
+    background-color: gray;
+    outline: none;
+    padding-left: 2%;
+    color: #fff; 
+}
+::placeholder{
+    color: #fff;
+    padding-left: 2%;
+}
+.login-btn{
+    margin-top: 40px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    width: 70%;
+    height: 40px;
+    font-size: 1rem;
+    word-spacing: 3%;
+    border-radius: 3px;
+}
+/* login page session start  */
+
+/* quiz parent box start */
+.quiz-parent{
+    display: flex;
+    justify-content: center;
+   /* border: solid; */
+   height: 500px;
+   line-height: 50px;
+   margin-top: 50px;
+
+}
+.answer-timer-parent{
+    /* display: flex;
+    justify-content: space-between; */
+    /* border: solid; */
+    color: #000;
+    width: 65%;
+    background-color: rgb(216, 200, 180);
+    /* margin-left: 2%; */
+}
+.answer-child{
+    margin-left: 2%;
+    font-size:20px;
+}
+
+.question{
+    margin-left: 2%;
+    font-size: 30px;
+}
+#timer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: solid; */
+    font-size: 50px;
+    padding-top: 40px;
+    width: 10%;
+    background-color: rgb(216, 200, 180);
+}
+.quiz-next-btn{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    /* border: solid; */
+    height: 91px;
+}
+.quiz-next-btn button{
+    width: 85px;
+    height: 40px;
+    background-color: #fff; 
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    /* color: #fff; */
+}
+/* quiz parent box  compelete*/
+
+/* home page css quiz start */
+.quiz-start-parent{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* border: solid #000; */
+ 
+}
+.quiz-start-parent button{
+    letter-spacing: 2px;
+    margin-top: 44px;
+    background-color: #907070;
+    height: 55px;
+    width: 36%;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 26px;
+    border: none;
+}
+.result-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-page button{
+    background-color: #907070;
+    width: 25%;
+    height: 46px;
+    border-radius: 20px;
+    margin-left: 34px;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+}
+/* home page css compelete quiz start */
+@media only screen and (max-width:800px) {
+  .answer-timer-parent{
+    width: 80%;
+  }
+    #timer{
+        /* margin-top: 20px; */
+        font-size:30px;
+    }
+    .question{
+        font-size: 20px;
+    }
+    .answer-child{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 27px;
+    }
+    .quiz-start-parent button{
+        width:400px;
+        height: 50px;
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .email-password-parent{
+         width: 80%;
+    }
+    #timer{
+        font-size:20px;
+    }
+    h1{
+        
+        font-size: 23px;
+    }
+    .quiz-start-parent button{
+        width: 280px;
+        height: 50px;
+        font-size: 13px;
+    }
+}
